@@ -1,0 +1,20 @@
+{
+    "name": "publixe/jsonrpc",
+    "description": "JSON-RPC server",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "pavex",
+            "email": "pavex@ines.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "publixe/website": "dev-master"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
