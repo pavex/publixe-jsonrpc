@@ -120,12 +120,11 @@
 			catch (Exception $e) {
 				$error = new \StdClass();
 				$error -> message = $e -> getMessage();
-//				$error -> exception = get_class($e);
 				$error -> code = $e -> getCode();
 //
 // Append exception trace if development mode is on
-//				if (Environment::isDev()) {
 				if (defined('DEV')) {
+					$error -> exception = get_class($e);
 					$error -> trace = $e -> getTrace();
 				}
 				$response = new Response();
